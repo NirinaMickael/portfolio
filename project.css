@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.sudoku{display: block;}
+.calc{display: none;}
+.Ges{display: none;}
+.st{display: none;}
+ .scroll a{
+  width:35%;
+  padding: .3em;
+  border-radius:1em;
+  border: 1px double white;
+  transition:.2s ease;
+  outline: none;
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-titre);
+  position:absolute;
+  left: 10%;
+  text-align: center;
+  color:var(--color-hover-textc);
+  text-decoration: none;
+  margin-top: 1em;
+}
+ .scroll a:hover{
+  padding: .3em .5em;
+  cursor: pointer;
+  background: var(--color-hover-textc);
+  color: black;
+}
+.scroll img {
+  position: relative;
+  left:10%;
+  transition:  all .2s ease-in;
+  border: .1em solid black;
+  border-radius: .5em;
+  width: 70%;
+  filter: brightness(.9);
+}
+@media (max-width:639px){
+*{
+    padding: 0;
+    margin: 0;
+}
+.scroll img {
+  left: 1.5em;
+  width: 90%;
+  margin: 1em 0;
+}
+.scroll a{
+  position: relative;
+  font-size: 3vh;
+  padding: 0 1em;
+  font-family: var(--font-family-text);
+}
+ h3{
+   font-size: var(--font-family-textS);
+   font-family: sans-serif;
+ }
+  .scroll{
+    height:max-content;
+    display: block;
+  }
+  .btN{
+    display: none;
+  }
+  .project{
+    margin-bottom: 2em;
+  }
+}

@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/***************ABOUT PAGE******************/
+.About{
+    width:100%;
+    background-color: rgba(12, 41, 46, 0.446);
+    margin: 1em 0 1em .5em;
+    overflow:auto;
+}
+.about{
+    display: block;
+}
+.Skills,.resume{
+    display: none;
+}
+.title{
+    font-size: var(--font-size-titre);
+    font-family: var(--font-family-text);
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+.title::after{
+  content: '';
+  position:relative;
+  width: 50px;
+  height: 2px;
+  background:var(--color-hover-btn);
+  display:block;
+}
+.about p{
+    color:var(--color-hover-text);
+    font-size:2vw;
+    font-family: var(--font-family-linkS);
+    position:relative;
+    margin-left: 10%;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.about p::after{
+    content: '';
+    position:relative;
+    display: block;
+    width:90%;
+    height: 1px;
+    background: var(--color-hover-textc);
+}
+.place h2{
+    font-family: var(--font-family-txt);
+    font-size: var(--font-size-link);
+    font-weight: 500;
+    margin-left: 1.3em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color:var(--color-hover-text);
+}
+.comp{
+   position: relative;
+   display: grid;
+   grid-template-rows: repeat(3,30%);
+   grid-template-columns:repeat(2,45%);
+   align-content: space-around;
+   justify-content: space-around;
+}
+.place{
+    align-self: center;
+}
+.place h2::before{
+   content: '';
+   position:absolute;
+   width: .4em;
+   height: .4em;
+   background: var(--color-hover-text);
+   clip-path: circle();
+   margin-left: -1em;
+   margin-top:.3em;
+}
+.progress{
+    width: 90%;
+    background: rgb(245, 245, 245);
+    height:var(--font-size-titre);   
+ }
+ .progress div{
+     background: var(--color-hover-text);
+     text-align: center;
+     font-family: 'Lucida Sans';
+     height:var(--font-size-titre);
+     font-size: var(--font-size-text);
+ }
+.css,.html{width: 70%; }
+.javascript{width: 40%;}
+.lgc{width: 55%;}
+.lgcpp{width: 30%;}
+.git{width: 25%;}
+/*************CV****************/
+.resume{
+    background:var(--color-bg-res);
+  }
+  table{
+      margin:auto;
+      width:100%;
+  }
+  .center td{
+      text-align: center;
+      height: 4em;
+  }
+  tr{
+      background: rgba(7, 10, 10, 0.371);
+  }
+  td{
+      padding: 1em .5em;
+      font-size:var(--font-size-text);
+      margin: .3em;
+      font-family: sans-serif;
+      letter-spacing: 2px;
+      color: var(--bg-ground-color);
+      height: 3em;
+  }
+  /**/
+  @media (max-width:640px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    /***************ABOUT PAGE******************/
+    body{
+        min-width: 100%;
+    }
+    .About{
+        width: 98%; 
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr .5fr .7fr;
+        overflow: hidden;
+        background: none;
+        margin:0;
+        margin-top: 20px;
+    }
+    .Skills,.resume,.about{
+        display: block;
+    }
+    .title{
+        font-size: var(--font-size-titreS);
+        font-family: var(--font-family-text);
+        font-weight: 500;
+        margin-bottom: 1em;
+    }
+    .title::after{
+      content: '';
+      position:relative;
+      width: 50px;
+      height: 2px;
+      background:var(--color-hover-btn);
+      display:block;
+    }
+    .place h2{
+        font-family: var(--font-family-linkS);
+        font-size: var(--font-size-textS);
+        font-weight: 500;
+        margin: 1em 0 1em 1em;
+        color:var(--color-hover-text);
+    }
+    .about{
+        width: 100%;
+        word-break:keep-all;
+    }
+    .about p{
+        color:var(--color-hover-text);
+        font-size:var(--font-size-linkS);
+        text-align: center;
+        font-family: var(--font-family-linkS);
+        position: relative;
+        margin-left: 0;
+    }
+    .about p::after{
+        width: 100%;
+    }
+    .progress{
+       width:90%;
+       background: rgb(245, 245, 245);
+       border-radius: 6px;
+       height: 3vh;   
+    }
+    .progress div{
+        background: var(--color-hover-textc);
+        text-align: center;
+        font-family: 'Lucida Sans';
+        height: 3vh;
+        font-size: var(--font-size-textS);
+    }
+    .css,.html{width: 70%; }
+    .javascript{width: 47%;}
+    .lgc{width: 60%;}
+    .lgcpp{width: 40%;}
+    .comp{
+       display: grid;
+       grid-template-columns:90%;
+       grid-template-rows: repeat(5,17%);
+       justify-content:space-around;
+       align-content:space-around;
+    }
+    /*************CV****************/
+    .resume{
+        background:var(--color-bg-res);
+      }
+      table{
+          width: 100%;
+      }
+      .center td{
+          text-align: center;
+      }
+      tr{
+          background: rgba(7, 10, 10, 0.371);
+          height: auto;
+      }
+      td{
+          padding: 1em .5em;
+          font-size:var(--font-size-textS);
+          margin: .3em;
+          font-family: sans-serif;
+          letter-spacing: 2px;
+          color: var(--bg-ground-color);
+      }
+      .btN{
+          display: none;
+      }
+  }

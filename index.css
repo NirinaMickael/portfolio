@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*HOME PAGE*/
+.Home{
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 53% 45%;
+    align-items: center;
+}
+  .description{
+        margin-left: 1.5em;
+    }
+    .description h1{
+        font-size: var(--font-size-letterhome);
+        color:var(--bg-ground-color);
+        font-family: var(--font-family-text);
+        font-weight: 500;
+    }
+    .description h1 span{
+        color: var(--color-hover-textc);
+    }
+    .btnprjct{
+        position:relative;
+        left: 10%;
+        top:0;
+    }
+    .btnprjct a{
+        width: 70%;
+        padding: .7em  1.5em;
+        font-size: var(--font-size-link);
+        color: black;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-family: var(--font-family-text);
+        background: linear-gradient(to right,var(--color-hover-text),var(--color-hover-textc));
+        transition:  all .3s ease-in-out;
+   }
+    .btnprjct a:hover{
+        padding: .7em 3em;
+        cursor: pointer;
+        border-radius: .6em;
+    }
+@media (max-width:639px) {
+    .Home{
+        width: 100%;
+        display:grid;
+        height:auto;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr;
+        overflow: hidden;
+        margin-top: 4em;
+    }
+      .description{
+            margin-left: 1em;
+        }
+        .description h1{
+            font-size: var(--font-size-letterhome);
+            color:var(--bg-ground-color);
+            font-family: var(--font-family-text);
+            font-weight: 500;
+        }
+        .description h1::before{
+            content: '';
+            position:absolute;
+            width: 2px;
+            height:20%;
+            background:var(--color-hover-text);
+            margin-left: -10px;
+        }
+        .description h1 span{
+            color: var(--color-hover-textc);
+        }
+        .btnprjct{
+            position:relative;
+            left: 10%;
+            top:0;
+        }
+        .btnprjct button{
+        display: none;
+        }
+}

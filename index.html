@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="commune.css">
+    <title>Home page</title>
+</head>
+<body>
+    <div class="content_logo">
+        <h1><span>Mon</span><span>Port</span>folio</h1>
+    </div>
+    <div class="circle one"></div>
+    <div class="circle two"></div>
+    <div class="circle three"></div>
+    <div class="show_menu"><ion-icon name="reorder-four-outline"></ion-icon></div>
+    <div class="hide_menu"><ion-icon name="close-outline"></ion-icon></div>
+    <main>
+        <nav>
+            <div class="photo">
+               <img src="IMG_20200922_171111.jpg" alt="monphoto">
+               <div class="logo">
+                <a href="https://m.facebook.com/roi.mickael"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="http://"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="http://"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://github.com/NirinaMickael"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+            </div>
+            <div class="nav_link">    
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="project.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+             <div class="Home">
+                <div class="description">
+                   <h1>Je suis<span>Mickael</span>,<br>je suis étudiant en <span> Mathématique</span><br>et
+                   <br>autodidacte en Programmation</h1>
+                </div>
+                <div class="illus">
+                    <img src="image/Mathematics-bro.svg" alt="">
+                </div>
+                <div class="btnprjct">
+                    <a href="project.html">Voir projets</a>
+                </div>
+            </div>
+        </div> 
+    </main>
+    <script >
+        if(screen.height>screen.width){
+	   document.querySelector(".Home").style.height=screen.height+"px";
+      }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    <script src="Dynamique.js"></script>
+</body>
+</html>

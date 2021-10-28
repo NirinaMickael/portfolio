@@ -1,0 +1,127 @@
+
+#contact{
+    width: 98%;
+    margin: auto; 
+    display:grid;
+    grid-template-columns:47% 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+#myform{
+    box-shadow:1px 2px 5px rgba(0, 0, 0, 0.644),
+               -1px -2px 5px black;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    background: -webkit-linear-gradient(to bottom,rgba(4, 20, 82, 0.775),rgba(32, 36, 162, 0.85));
+    background: -o-linear-gradient(to bottom,rgba(4, 25, 109, 0.775),rgba(31, 35, 165, 0.85));
+    background: linear-gradient(to bottom,rgba(6, 30, 124, 0.775),rgba(5, 12, 44, 0.85));
+}
+form img{
+    clip-path: circle();
+    transform: translateX(75%);
+    margin-top: 1em;
+}
+p{
+    color: rgb(179, 176, 176);
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+    font-size: 3vh;
+}
+label,input{
+    margin-bottom: .5em;
+    margin-left: 2em;
+    letter-spacing: 1.6px;
+}
+label{
+    color: var(--color-hover-textc);
+    font-size: var(--font-size-link);
+}
+input{
+    border: none;
+    outline: none;
+    width: 70%;
+    background: transparent;
+    border-bottom: 1px solid var(--bg-ground-color);
+    padding: .5em;
+    color: var(--bg-ground-color);
+    font-size: var(--font-size-link);
+    font-family: sans-serif;
+}
+button{
+    width: 20%;
+    position: relative;
+    left: 70%;
+    background:var(--color-hover-text);
+    padding: .5em;
+    margin: .5em 0;
+    border: none;
+    outline: none;
+    font-size: var(--font-size-text);
+    cursor: pointer;
+}
+@media (max-width:639px) {
+    *{
+        padding: 0;
+        margin:0;
+    }
+    #contact{
+    margin: auto;
+     display: grid;
+     grid-template-rows:50% 47%;
+     grid-template-columns: 1fr;
+     align-content: space-between;
+    }
+    #Contact{
+        margin-top:4em;
+    }
+    #myform{
+        box-shadow:1px 2px 5px rgba(0, 0, 0, 0.644),
+                   -1px -2px 5px black;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+    }
+    p{
+        color: rgb(179, 176, 176);
+        margin-left: 1em;
+        margin-bottom: 1em;
+        font-size:var(--font-size-linkS);
+    }
+    input,label{
+        display: block;
+    }
+    input{
+        width: 80%;
+        margin: auto;
+        font-size: var(--font-size-textS);
+        padding: .7em;
+    }
+    label{
+      margin:1em 0;
+      margin-left:10%;
+      font-size: var(--font-size-textS);
+    }
+    button{
+        width: auto;
+        position: relative;
+        left: 60%;
+        background:var(--color-hover-text);
+        padding:.6em 1.5em;
+        margin: 1em 0;
+        border: none;
+        outline: none;
+        font-size: var(--font-size-textS);
+        border-radius: 1em;
+    }
+    #nom,#email,#message{
+        background-position: 7px 7px;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-color:rgba(7, 10, 10, 0.371);
+    }
+
+}
